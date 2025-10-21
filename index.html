@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Algebra, Linear Equations & Factoring Exam (Set 2)</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    background: linear-gradient(135deg, #f3e5f5, #e0f7fa);
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+  }
+  .container {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    max-width: 950px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    display: inline-block;
+    width: 180px;
+    margin-left: 10px;
+  }
+  .correct-answer {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .result {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="text-center mb-4">Advanced Algebra & Factoring Exam</h2>
+  <p class="text-center text-muted">Includes challenging problems on Algebraic Manipulation, Linear Equations, and Factoring</p>
+  
+  <form id="examForm">
+    <ol>
+      <!-- Harder Algebra -->
+      <li>Simplify: (2x + 3)(x − 4) = <input type="text" class="form-control" name="q1"> <span class="correct-answer">→ 2x² − 5x − 12</span></li>
+      <li>Simplify: (x + 2)² = <input type="text" class="form-control" name="q2"> <span class="correct-answer">→ x² + 4x + 4</span></li>
+      <li>Simplify: (3x − 1)(x + 5) = <input type="text" class="form-control" name="q3"> <span class="correct-answer">→ 3x² + 14x − 5</span></li>
+      <li>Simplify: (x + 2)(x² − 3x + 4) = <input type="text" class="form-control" name="q4"> <span class="correct-answer">→ x³ − x² − 2x + 8</span></li>
+      <li>Simplify: (2a − 3b)(2a + 3b) = <input type="text" class="form-control" name="q5"> <span class="correct-answer">→ 4a² − 9b²</span></li>
+      <li>Expand: (x − 5)(x² + 5x + 25) = <input type="text" class="form-control" name="q6"> <span class="correct-answer">→ x³ − 125</span></li>
+      <li>Simplify: (3x + 2)(x − 4) = <input type="text" class="form-control" name="q7"> <span class="correct-answer">→ 3x² − 10x − 8</span></li>
+      <li>Simplify: (x² + 5x)(x + 3) = <input type="text" class="form-control" name="q8"> <span class="correct-answer">→ x³ + 8x² + 15x</span></li>
+      <li>Simplify: (4x²y)(3xy³) = <input type="text" class="form-control" name="q9"> <span class="correct-answer">→ 12x³y⁴</span></li>
+      <li>Simplify: (5x²y²) ÷ (10xy) = <input type="text" class="form-control" name="q10"> <span class="correct-answer">→ (x y)/2</span></li>
+
+      <!-- Harder Linear Equations -->
+      <li>Solve for x: 3x − 5 = 2x + 7 → x = <input type="text" class="form-control" name="q11"> <span class="correct-answer">→ 12</span></li>
+      <li>Solve for x: 5(x − 2) = 3(x + 4) → x = <input type="text" class="form-control" name="q12"> <span class="correct-answer">→ 11</span></li>
+      <li>Solve for x: 7x − 2(3x + 1) = 10 → x = <input type="text" class="form-control" name="q13"> <span class="correct-answer">→ 4</span></li>
+      <li>Solve for x: 4(2x − 1) = 3x + 7 → x = <input type="text" class="form-control" name="q14"> <span class="correct-answer">→ 11</span></li>
+      <li>Solve for y: 6y + 8 = 3y + 23 → y = <input type="text" class="form-control" name="q15"> <span class="correct-answer">→ 5</span></li>
+      <li>Solve for x: 9x + 5 = 2(4x + 9) → x = <input type="text" class="form-control" name="q16"> <span class="correct-answer">→ 13</span></li>
+      <li>Solve for x: 5x + 8 = 3x + 20 → x = <input type="text" class="form-control" name="q17"> <span class="correct-answer">→ 6</span></li>
+      <li>Solve for x: 4(x − 3) = 2(x + 5) → x = <input type="text" class="form-control" name="q18"> <span class="correct-answer">→ 11</span></li>
+      <li>Solve for x: 8x − 3 = 2x + 9 → x = <input type="text" class="form-control" name="q19"> <span class="correct-answer">→ 2</span></li>
+      <li>Solve for y: 3(y − 4) = 2(y + 5) → y = <input type="text" class="form-control" name="q20"> <span class="correct-answer">→ 22</span></li>
+
+      <!-- Harder Factoring -->
+      <li>Factor: x² − 49 = <input type="text" class="form-control" name="q21"> <span class="correct-answer">→ (x + 7)(x − 7)</span></li>
+      <li>Factor: x² + 6x + 5 = <input type="text" class="form-control" name="q22"> <span class="correct-answer">→ (x + 1)(x + 5)</span></li>
+      <li>Factor: x² − 9x + 18 = <input type="text" class="form-control" name="q23"> <span class="correct-answer">→ (x − 3)(x − 6)</span></li>
+      <li>Factor: 2x² + 7x + 3 = <input type="text" class="form-control" name="q24"> <span class="correct-answer">→ (2x + 1)(x + 3)</span></li>
+      <li>Factor: 3x² − 8x − 3 = <input type="text" class="form-control" name="q25"> <span class="correct-answer">→ (3x + 1)(x − 3)</span></li>
+      <li>Factor: 2x² − 11x + 5 = <input type="text" class="form-control" name="q26"> <span class="correct-answer">→ (2x − 1)(x − 5)</span></li>
+      <li>Factor: 6x² + 7x − 3 = <input type="text" class="form-control" name="q27"> <span class="correct-answer">→ (3x − 1)(2x + 3)</span></li>
+      <li>Factor: 4x² − 12x + 9 = <input type="text" class="form-control" name="q28"> <span class="correct-answer">→ (2x − 3)²</span></li>
+      <li>Factor: 9x² − 25 = <input type="text" class="form-control" name="q29"> <span class="correct-answer">→ (3x + 5)(3x − 5)</span></li>
+      <li>Factor: 5x² − 20x + 20 = <input type="text" class="form-control" name="q30"> <span class="correct-answer">→ 5(x − 2)²</span></li>
+      <li>Factor: x³ − 8 = <input type="text" class="form-control" name="q31"> <span class="correct-answer">→ (x − 2)(x² + 2x + 4)</span></li>
+      <li>Factor: x³ + 27 = <input type="text" class="form-control" name="q32"> <span class="correct-answer">→ (x + 3)(x² − 3x + 9)</span></li>
+      <li>Factor: a³ − b³ = <input type="text" class="form-control" name="q33"> <span class="correct-answer">→ (a − b)(a² + ab + b²)</span></li>
+      <li>Factor: a³ + b³ = <input type="text" class="form-control" name="q34"> <span class="correct-answer">→ (a + b)(a² − ab + b²)</span></li>
+      <li>Factor: 2x³ + 4x² − 6x = <input type="text" class="form-control" name="q35"> <span class="correct-answer">→ 2x(x + 3)(x − 1)</span></li>
+      <li>Factor: x² − 4x − 21 = <input type="text" class="form-control" name="q36"> <span class="correct-answer">→ (x − 7)(x + 3)</span></li>
+      <li>Factor: 2x² − 9x + 9 = <input type="text" class="form-control" name="q37"> <span class="correct-answer">→ (2x − 3)(x − 3)</span></li>
+      <li>Factor: 4x² − 1 = <input type="text" class="form-control" name="q38"> <span class="correct-answer">→ (2x + 1)(2x − 1)</span></li>
+      <li>Factor: 12x² − 3x = <input type="text" class="form-control" name="q39"> <span class="correct-answer">→ 3x(4x − 1)</span></li>
+      <li>Factor: x³ − 4x² − 5x = <input type="text" class="form-control" name="q40"> <span class="correct-answer">→ x(x − 5)(x + 1)</span></li>
+      <li>Factor: 9x³ − 36x² + 36x = <input type="text" class="form-control" name="q41"> <span class="correct-answer">→ 9x(x − 2)²</span></li>
+      <li>Factor: 16x² − 24x + 9 = <input type="text" class="form-control" name="q42"> <span class="correct-answer">→ (4x − 3)²</span></li>
+      <li>Factor: 8x³ + 27 = <input type="text" class="form-control" name="q43"> <span class="correct-answer">→ (2x + 3)(4x² − 6x + 9)</span></li>
+      <li>Factor: 9x² − 12x + 4 = <input type="text" class="form-control" name="q44"> <span class="correct-answer">→ (3x − 2)²</span></li>
+      <li>Factor: 3x² − 27 = <input type="text" class="form-control" name="q45"> <span class="correct-answer">→ 3(x + 3)(x − 3)</span></li>
+      <li>Factor: x² − 2x − 24 = <input type="text" class="form-control" name="q46"> <span class="correct-answer">→ (x − 6)(x + 4)</span></li>
+      <li>Factor: 4x³ − 16x = <input type="text" class="form-control" name="q47"> <span class="correct-answer">→ 4x(x − 2)(x + 2)</span></li>
+      <li>Factor: 25x² − 30x + 9 = <input type="text" class="form-control" name="q48"> <span class="correct-answer">→ (5x − 3)²</span></li>
+      <li>Factor: x² + 2x − 63 = <input type="text" class="form-control" name="q49"> <span class="correct-answer">→ (x + 9)(x − 7)</span></li>
+      <li>Factor: 6x² − 11x − 10 = <input type="text" class="form-control" name="q50"> <span class="correct-answer">→ (3x + 2)(2x − 5)</span></li>
+    </ol>
+
+    <div class="text-center mt-4">
+      <button type="button" class="btn btn-primary btn-lg" onclick="checkAnswers()">Submit Answers</button>
+    </div>
+    <div id="result" class="result text-center"></div>
+  </form>
+</div>
+
+<script>
+function checkAnswers() {
+  const answers = {
+    q1:"2x²−5x−12", q2:"x²+4x+4", q3:"3x²+14x−5", q4:"x³−x²−2x+8", q5:"4a²−9b²",
+    q6:"x³−125", q7:"3x²−10x−8", q8:"x³+8x²+15x", q9:"12x³y⁴", q10:"xy/2",
+    q11:"12", q12:"11", q13:"4", q14:"11", q15:"5", q16:"13", q17:"6", q18:"11", q19:"2", q20:"22",
+    q21:"(x+7)(x−7)", q22:"(x+1)(x+5)", q23:"(x−3)(x−6)", q24:"(2x+1)(x+3)", q25:"(3x+1)(x−3)",
+    q26:"(2x−1)(x−5)", q27:"(3x−1)(2x+3)", q28:"(2x−3)²", q29:"(3x+5)(3x−5)", q30:"5(x−2)²",
+    q31:"(x−2)(x²+2x+4)", q32:"(x+3)(x²−3x+9)", q33:"(a−b)(a²+ab+b²)", q34:"(a+b)(a²−ab+b²)",
+    q35:"2x(x+3)(x−1)", q36:"(x−7)(x+3)", q37:"(2x−3)(x−3)", q38:"(2x+1)(2x−1)", q39:"3x(4x−1)",
+    q40:"x(x−5)(x+1)", q41:"9x(x−2)²", q42:"(4x−3)²", q43:"(2x+3)(4x²−6x+9)", q44:"(3x−2)²",
+    q45:"3(x+3)(x−3)", q46:"(x−6)(x+4)", q47:"4x(x−2)(x+2)", q48:"(5x−3)²", q49:"(x+9)(x−7)", q50:"(3x+2)(2x−5)"
+  };
+
+  let score = 0;
+  const total = Object.keys(answers).length;
+
+  for (const [key, value] of Object.entries(answers)) {
+    const input = document.querySelector(`[name="${key}"]`);
+    const correct = document.querySelector(`[name="${key}"] + .correct-answer`);
+    if (input.value.replace(/\s+/g, '') === value.replace(/\s+/g, '')) {
+      score++;
+    }
+    correct.style.display = "inline";
+  }
+
+  document.getElementById("result").innerHTML = `Your Score: ${score} / ${total}`;
+}
+</script>
+
+</body>
+</html>
